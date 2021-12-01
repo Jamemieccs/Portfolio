@@ -68,9 +68,9 @@ section {
     height: 100vh;
 }
 
-#welcome-section {
+/*#welcome-section {
     background-color: var(--main-color);
-}
+}*/
 
 @keyframes blink-cursor {
     0% {
@@ -111,7 +111,7 @@ section {
 }
 
 #about-me {
-    background-color: var(--second-color);
+/*    background-color: var(--second-color);*/
     background-image: url(Photo/blackDrip.png), url(Photo/JameGrad.jpg);
     background-repeat: no-repeat;
     background-size: 100%, 35%;
