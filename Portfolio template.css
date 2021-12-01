@@ -89,7 +89,7 @@ section {
 }
 
 #welcome-section {
-    background-image: url(photo/Jame.JPG);
+    background-image: url(Photo/Jame.JPG);
     background-repeat: no-repeat;
     background-size: 50%;
     background-position: 80% 40%;
@@ -112,7 +112,7 @@ section {
 
 #about-me {
     background-color: var(--second-color);
-    background-image: url(photo/blackDrip.PNG), url(photo/JameGrad.JPG);
+    background-image: url(Photo/blackDrip.PNG), url(Photo/JameGrad.JPG);
     background-repeat: no-repeat;
     background-size: 100%, 35%;
     background-position: 0% 0%, 5% 85%;
