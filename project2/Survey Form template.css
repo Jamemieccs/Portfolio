@@ -1,0 +1,167 @@
+html {
+    font-size: 10px;
+} 
+
+body {
+    background-image: linear-gradient(35deg,
+    rgba(122, 32, 72, 0.5), 
+    rgba(30, 39, 97, 0.8)),
+    url(Background\ 2.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    font-family: Heebo;
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+.form-head {
+    margin: 20px 0 5px 0;
+}
+
+.form-body {
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 0.5rem;
+    width: 60%;
+    height: auto;
+    margin: 0 auto;
+    padding: 5px;
+    font-size: 1.75rem;
+}
+
+h1 {
+    font-size: 3rem;
+    margin: 50px 0 0 0;
+    font-family: 'DM Sans', Heebo;
+    font-weight: 5000;
+}
+
+#description {
+    font-size: 1.25rem;
+    font-style: italic;
+}
+
+.info-box {
+    padding: 5px;
+    text-align: left;
+    font-size: 1.75rem;
+    font-family: 'DM Sans', Heebo;
+}
+
+.form-box {
+    width: 100%;
+    display: block;
+    font-family: 'DM Sans', Heebo;
+    border: 1px solid #777;
+    border-radius: 0.25rem;
+    background-color: #fff;
+    min-height: 3rem;
+    font-size: 1.5rem;
+}
+
+.choice {
+    display: block;
+    font-size: 1.75rem;
+}
+
+.clue {
+    margin-left: 0.25rem;
+    font-size: 1rem;
+    font-weight: 75;
+}
+
+.text-area {
+    min-height: 120px;
+    width: 100%;
+    padding: 0.25rem;
+    font-size: 1.5rem;
+}
+
+#submit-button {
+    font-family: 'DM Sans', Heebo;
+    color: #fff;
+    font-weight: 100;
+    background-color: #37af65;
+    border: 1px solid #37af65;
+    border-radius: 3%;
+    width: 50%;
+    align-self: center;
+    font-size: 2rem;
+}
+
+#submit-button:hover {
+    background-color: #32cd32;
+    border: 1px solid #32cd32;
+    font-weight: 500;
+}
+
+#submit-button:focus {
+    background-color: #237141;
+    border: 1px solid #237141;
+}
+
+@media (max-width: 750px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .info-box {
+        font-size: 1.5rem
+    }
+
+    .choice {
+        font-size: 1.5rem;
+    }
+
+    #description {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 500px) {
+    h1 {
+        font-size: 2.25rem;
+    }
+
+    .info-box {
+        font-size: 1.25rem
+    }
+
+    .choice {
+        font-size: 1.25rem;
+    }
+
+    #description {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    h1 {
+        font-size: 4rem;
+    }
+
+    .info-box {
+        font-size: 2rem
+    }
+
+    .choice {
+        font-size: 2rem;
+    }
+
+    #description {
+        font-size: 1.5rem;
+    }
+
+    .form-body {
+        max-width: 50%;
+    }
+
+    .form-box {
+        height: 3rem;
+        font-size: 1.5rem;
+    }
+}

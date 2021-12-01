@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Kridsada's Survey Form</title>
+        <link rel="stylesheet" href="Survey Form template.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Heebo:wght@200&family=DM+Sans&family=IBM+Plex+Sans:wght@300&family=Oxygen:wght@300">
+    </head>
+
+    <body>
+        <div class="form-head">
+            <h1 id="title">Website Experience Satisfaction Survey Form</h1>
+            <p id="description">This survey is a sample product of the online survey platform for collect data from customer created by Jimmie</p>
+        </div>
+        <div class="form-body">
+            <form id="survey-form">
+                <div class="info-box">
+                    <label id="name-label" for="name">Name</label>
+                    <input 
+                    name="name"
+                    id="name"
+                    type="text" 
+                    class="form-box"
+                    placeholder="Enter your name here"
+                    required>
+                </div>
+                <div class="info-box">
+                    <label id="email-label" for="email">Email</label>
+                    <input
+                    name="email"
+                    id="email"
+                    type="email"
+                    class="form-box"
+                    placeholder="Enter your email here"
+                    required>
+                </div>
+                <div class="info-box">
+                    <label id="number-label" for="number">Age<span class="clue">(optional)</span></label>
+                    <input
+                    name="age"
+                    id="number"
+                    type="number"
+                    class="form-box"
+                    placeholder="Enter your age"
+                    min="0"
+                    max="150">
+                </div>
+                <div class="info-box">
+                    <p>What is your current position</p>
+                    <select id="dropdown" name="role" class="form-box" required>
+                        <option disabled selected value >Select the current position</option>
+                        <option value="student">Student</option>
+                        <option value="graduated">Graduate</option>
+                        <option value="first-jobber">First Jobber</option>
+                        <option value="freelance">Freelance</option>
+                        <option value="entrepreneur">Entrepreneur</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="info-box">
+                    <p>How would you rate your experience with my website page?</p>
+                    <label class="choice">
+                        <input 
+                        name="user-exp"
+                        value="very-satisfied"
+                        type="radio"
+                        checked>Very Satisfied
+                    </label>
+                    <label class="choice">
+                        <input
+                        name="user-exp"
+                        value="satisfied"
+                        type="radio">Satisfied
+                    </label>
+                    <label class="choice">
+                        <input
+                        name="user-exp"
+                        value="neutral"
+                        type="radio">Neutral
+                    </label>
+                    <label class="choice">
+                        <input
+                        name="user-exp"
+                        value="dissatisfied"
+                        type="radio">Dissatisfied
+                    </label>
+                    <label class="choice">
+                        <input
+                        name="user-exp"
+                        type="radio"
+                        value="very-dissatisfied">Very Dissatisfied
+                    </label>
+                </div>
+                <div class="info-box">
+                    <p>What kind of project you want us to do next time?<span class="clue">(Check all for apply)</span></p>
+                    <label class="choice">
+                        <input
+                        name="recommended"
+                        value="website"
+                        type="checkbox">Website
+                    </label>
+                    <label class="choice">
+                        <input
+                        name="recommended"
+                        value="short-film"
+                        type="checkbox">Short Film
+                    </label>
+                    <label class="choice">
+                        <input
+                        name="recommended"
+                        value="vlog"
+                        type="checkbox">Vlog
+                    </label>
+                    <label class="choice">
+                        <input
+                        name="recommended"
+                        value="code-tutorial"
+                        type="checkbox">Coding Totorial
+                    </label>
+                    <label class="choice">
+                        <input
+                        name="recommended"
+                        value="software"
+                        type="checkbox">Software 
+                    </label>
+                    <label class="choice">
+                        <input
+                        name="recommended";
+                        value="game"
+                        type="checkbox">Game
+                    </label>
+                </div>
+                <div class="info-box">
+                    <p>Any comment of suggestion?</p>
+                    <textarea 
+                    id="comment"
+                    name="comment"
+                    class="text-area"
+                    placeholder="Enter your comment here ..."></textarea>
+                </div>
+                <div>
+                    <button id="submit-button" type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </body>
+
+</html>

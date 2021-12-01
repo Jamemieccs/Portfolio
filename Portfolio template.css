@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    line-height: 1.75;
+}
+
+:root {
+    --main-color: #000;
+    --second-color: #fff;
+    --third-color: red;
+    --favorite-color: #0f1644;
+    --hover-color: #999;
+    --scrolled-bar-color: 255, 255, 255;
+    --scrolled-bar-shadow-color: 0, 0, 0;
+    --text-dark-color: #000;
+    --text-bright-color: #fff;
+}
+
+body {
+    background-color: var(--main-color);
+    font-family: Jost;
+}
+
+header {
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 8vh;
+    background-color: var(--main-color);
+    position: sticky;
+    top: 0;
+    transition: 200ms linear;
+}
+
+#navbar > a {
+    padding: 2.15vh 4vh;
+    text-decoration: none;
+    color: var(--second-color);
+}
+
+#navbar > a:hover {
+    color: var(--hover-color);
+}
+
+.scrolled {
+    background-color: rgba(var(--scrolled-bar-color), 0.5);
+    box-shadow: 0 4px 10px rgba(var(--scrolled-bar-shadow-color), 0.1);
+}
+
+.items-scrolled {
+    color: var(--text-dark-color) !important;
+}
+
+.items-scrolled:hover {
+    color: var(--hover-color) !important;
+    transition: 0.3s;
+}
+
+.scrolled-img {
+    filter: invert(1);
+}
+
+section {
+    padding-top: 9vh;
+    height: 100vh;
+}
+
+#welcome-section {
+    background-color: var(--main-color);
+}
+
+@keyframes blink-cursor {
+    0% {
+        opacity: 0;
+    }
+}
+
+#home-object h1::after {
+    content: "";
+    width: 5px;
+    height: 6rem;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: var(--second-color);
+    animation: blink-cursor 1s steps(2) infinite;
+}
+
+#welcome-section {
+    background-image: url(photo/Jame.JPG);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: 80% 40%;
+}
+
+.box-object {
+    font-size: 2.25rem;
+}
+
+.box-object > h1 {
+    font-size: 5rem;
+}
+
+#home-object {
+    color: var(--text-bright-color);
+    margin: 10% 0 0 10%;
+    width: 60%;
+    background-color: transparent;
+}
+
+#about-me {
+    background-color: var(--second-color);
+    background-image: url(photo/blackDrip.PNG), url(photo/JameGrad.JPG);
+    background-repeat: no-repeat;
+    background-size: 100%, 35%;
+    background-position: 0% 0%, 5% 85%;
+}
+
+#about-object {
+    background-color: transparent;
+    margin: 0 0 0 43%;
+    width: 50%;
+}
+
+#project {
+    background-color: var(--third-color);
+}
+
+#contact {
+    background-color: var(--favorite-color);
+}
