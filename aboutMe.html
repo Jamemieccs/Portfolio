@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="Portfolio template.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Jost:wght@100;400">
+        <script src="Portfolio JS.js"></script>
+    </head>
+    <body onload="writeName()">
+        <header id="header">
+            <a id="header-logo" href="index.html"><img src="Photo/Logo.png"
+                style="height: 7vh; width: auto; margin-top: 1vh;"></a>
+            <nav id="navbar">
+                <a href="#welcome-section">Home</a>
+                <a href="#about-me">About Me</a>
+                <a href="#project">Project</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
+        <section id="welcome-section">
+            <div id="home-object" class="box-object">
+                <h3>This is about me page!</h3>
+                <h1 id="home-name"></h1>
+                <button type="button" onclick="location.href='#about-me'" class="decoration-btn"><span class="btn-dec">&lt;</span>
+                 About Me <span class="btn-dec">/&gt;</span></button>
+            </div>
+        </section>
+        <section id="about-me">
+            <div id="about-object" class="box-object">
+                <h1>About Me</h1>
+            </div>
+        </section>
+        <section id="project">
+        </section>
+        <section id="contact">
+        </section>
+    </body>
+</html>
