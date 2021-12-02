@@ -15,6 +15,7 @@
     --scrolled-bar-shadow-color: 0, 0, 0;
     --text-dark-color: #000;
     --text-bright-color: #fff;
+    --btn-color: #b40101;
 }
 
 body {
@@ -32,7 +33,7 @@ header {
     background-color: var(--main-color);
     position: sticky;
     top: 0;
-    transition: 200ms linear;
+    transition: 200ms ease-in-out;
 }
 
 #navbar > a {
@@ -66,6 +67,30 @@ header {
 section {
     padding-top: 9vh;
     height: 100vh;
+}
+
+.decoration-btn {
+    font-size: 1.5rem;
+    padding: 1rem;
+    border-radius: 2rem;
+    border: 0.2rem solid var(--text-bright-color);
+    cursor: pointer;
+    background: var(--main-color);
+    color: var(--text-bright-color);
+    transition: 0.2s ease;
+    position: relative;
+    z-index: 99;
+}
+
+.btn-dec {
+    font-size: 1.5rem;
+    color: var(--text-dark-color);
+}
+
+.decoration-btn:hover, .decoration-btn:hover .btn-dec{
+    translate: 10px 0;
+    color: var(--btn-color);
+    border-color: var(--btn-color);
 }
 
 #welcome-section {
