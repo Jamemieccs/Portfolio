@@ -362,7 +362,7 @@ section {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(var(--scrolled-bar-color), 0.7);
+    background-color: rgba(var(--scrolled-bar-color), 0.8);
     opacity: 0;
     pointer-events: none;
 }
