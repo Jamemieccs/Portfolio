@@ -8,7 +8,7 @@
 :root {
     --main-color: #000;
     --second-color: #fff;
-    --third-color: red;
+    --third-color: #303841;
     --favorite-color: #0f1644;
     --hover-color: #999;
     --scrolled-bar-color: 255, 255, 255;
@@ -136,8 +136,9 @@ section {
     background-color: var(--second-color);
     background-image: url(Photo/blackDrip.PNG), url(Photo/JameGrad.JPG);
     background-repeat: no-repeat;
-    background-size: 100%, 35%;
-    background-position: 0% 0%, 5% 85%;
+    background-size: 100%, 40%;
+    background-position: 0% 0%, 2% 70%;
+    height: 120vh;
 }
 
 #skills-object {
@@ -147,6 +148,32 @@ section {
     font-size: 2rem;
 }
 
+.skill-set {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.language-logo {
+    font-size: 3rem;
+}
+
+.html5 {
+    color: #e34c26;
+}
+
+.css3 {
+    color: #264de4;
+}
+
+.js-sq {
+    color: #f0db4f;
+}
+
+.python {
+    color: #4b8bbe;
+}
+
 .skill-describe {
     margin-left: 10px;
     font-size: 1rem;
@@ -154,6 +181,7 @@ section {
 }
 
 .skill-container {
+    width: 90%;
     font-size: 1.5rem;
     background-color: #ccc;
     border-radius: 1rem;
@@ -167,27 +195,54 @@ section {
 }
 
 .html {
-    width: 15%;
-    background-color: greenyellow;
+    width: 20%;
+    background-color: #e34c26;
 }
 
 .css {
-    width: 15%;
-    background-color: salmon;
+    width: 20%;
+    background-color: #264de4;
 }
 
 .js {
-    width: 10%;
-    background-color: yellow;
+    width: 15%;
+    background-color: #f0db4f;
 }
 
 .py {
-    width: 10%;
-    background-color: skyblue;
+    width: 15%;
+    background-color: #4b8bbe;
+}
+
+.other {
+    color: var(--third-color);
 }
 
 #project {
     background-color: var(--third-color);
+}
+
+#project-object {
+    background-color: red;
+    text-align: center;
+}
+
+.project-showcase {
+    width: 80%;
+    height: 100%;
+    background-color: tomato;
+    margin:0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project-container {
+    content: "";
+    margin: 1%;
+    width: calc(90% / 2);
+    height: 30vh;
+    background-color: green;
 }
 
 #contact {
