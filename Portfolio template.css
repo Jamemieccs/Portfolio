@@ -15,7 +15,9 @@
     --scrolled-bar-shadow-color: 0, 0, 0;
     --text-dark-color: #000;
     --text-bright-color: #fff;
-    --btn-color: #aaa;
+    --btn-color: #222;
+    --btn-hover-color: #fc6a03;
+    --btn-shadow-color: 255, 255, 255;
     --mouse-color: #fff;
     --span-color: #aaa;
 }
@@ -37,6 +39,7 @@ header {
     position: sticky;
     top: 0;
     transition: 200ms ease-in-out;
+    z-index: 10;
 }
 
 #navbar > a {
@@ -77,7 +80,7 @@ section {
     padding: 1rem;
     border-radius: 2rem;
     border: 0.2rem solid var(--text-bright-color);
-    background: var(--main-color);
+    background: var(--btn-color);
     color: var(--text-bright-color);
     transition: 0.2s ease;
     position: relative;
@@ -90,8 +93,8 @@ section {
 
 .decoration-btn:hover, .decoration-btn:hover .btn-dec{
     translate: 10px 0;
-    color: var(--btn-color);
-    border-color: var(--btn-color);
+    color: var(--btn-hover-color);
+    border-color: var(--btn-hover-color);
 }
 
 @keyframes blink-cursor {
@@ -138,7 +141,7 @@ section {
     background-repeat: no-repeat;
     background-size: 100%, 40%;
     background-position: 0% 0%, 2% 70%;
-    height: 120vh;
+    height: auto;
 }
 
 #skills-object {
@@ -220,29 +223,64 @@ section {
 
 #project {
     background-color: var(--third-color);
+    height: auto;
 }
 
 #project-object {
-    background-color: red;
     text-align: center;
 }
 
-.project-showcase {
-    width: 80%;
-    height: 100%;
-    background-color: tomato;
-    margin:0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+#project-object > h1 {
+    color: var(--text-bright-color);
 }
 
-.project-container {
-    content: "";
+.project-showcase {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    width: 100%;
+    padding: 5%;
+    margin: 0 auto;
+}
+
+.project-tile {
     margin: 1%;
-    width: calc(90% / 2);
-    height: 30vh;
-    background-color: green;
+    width: 100%;
+    padding: 10%;
+    border: 0 solid;
+    border-radius: 2rem;
+    cursor: pointer;
+    background-color: var(--btn-color);
+    transition: 0.25s ease;
+}
+
+.project-tile > h3 {
+    color: var(--text-bright-color);
+    font-size: 1.25rem;
+    margin: 2% auto;
+}
+
+.project-tile .btn-dec {
+    color: var(--btn-color);
+    transition: 0.25s linear;
+}
+
+.project-tile:hover {
+    transform: translate(-5px, -5px);
+    width: 105%;
+    height: auto;
+    box-shadow: 0 0 10px 10px rgba(var(--btn-shadow-color), 0.2);
+}
+
+.project-tile:hover .btn-dec {
+    color: var(--btn-hover-color);
+}
+
+.project-pic-cover {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1%;
+    box-shadow: 5px 5px 10px rgba(var(--btn-shadow-color), 0.3);
 }
 
 #contact {
