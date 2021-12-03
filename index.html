@@ -86,7 +86,7 @@
             <div id="project-object" class="box-object">
                 <h1>My project</h1>
                 <div class="project-showcase">
-                    <button class="project-tile">
+                    <button data-modal-target="#project1-modal" class="project-tile">
                         <img src="Photo/project1.png" alt="A project 1 cover" class="project-pic-cover">
                         <h3><span class="btn-dec">&lt;</span> Tribute Page Project <span class="btn-dec">/&gt;</span></h3>
                     </button>
@@ -112,6 +112,25 @@
                     </button>
                 </div>
             </div>
+            <div class="modal" id="project1-modal">
+                <div class="modal-header">
+                    <h2>Tribute page Project</h2>
+                    <button data-close-button class="close-btn">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <h1>Technology : <i class="fab fa-html5 language-logo html5"></i>
+                    <i class="fab fa-css3-alt language-logo css3"></i></h1>
+                    <video class="modal-video" controls autoplay>
+                        <source src="Video/project1.mov" type="video/mp4">
+                    </video>
+                    <p>This is my first time to create a website by HTML and CSS ! This project is just a responsive webpage.
+                        the content is about my brief story.
+                    </p>
+                    <button class="modal-btn" type="button" onclick="location.href='project1/Tribute page.html'"
+                    >View Project</button>
+                </div>
+            </div>
+            <div id="overlay"></div>
         </section>
         <section id="contact">
         </section>
