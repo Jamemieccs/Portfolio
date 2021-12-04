@@ -8,6 +8,7 @@ function writeName() {
         setTimeout(writeName, speed);
     }
 }
+
 window.onscroll = () => {headerScrolled()};
 
 headerScrolled = () => {
