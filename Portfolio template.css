@@ -28,6 +28,55 @@ body {
     position: relative;
 }
 
+.loading-page {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 5;
+    background-color: var(--main-color);
+    transition: 300ms ease;
+}
+
+.loading-page.hidden{
+    animation: fadeOut 1s;
+    animation-fill-mode: forwards;
+}
+
+.loading-page svg {
+    width: 100%;
+    height: 100vh;
+}
+
+.loading-page textPath {
+    font-size: 0.8rem;
+}
+
+.loading-page path {
+    transform: translate(50%, 50%);
+}
+
+.loading-circle {
+    animation: loadingRotate 6s linear infinite;
+}
+
+@keyframes loadingRotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+@keyframes fadeOut {
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
 header {
     font-size: 1.5rem;
     display: flex;

@@ -5,6 +5,26 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Jost:wght@100;400">
     </head>
     <body onload="writeName()">
+        <div id="loading-page" class="loading-page">
+            <div class="loading-circle">
+                <svg viewbox="0 0 500 500">
+                    <defs>
+                        <path id="circlePath" 
+                        d=" 
+                        m 0, 0 
+                        m -50, 0 
+                        a 50, 50 0 1, 1 100,0 
+                        a 50, 50 0 1, 1 -100,0 "/>
+                    </defs>
+                    <g>
+                        <use xlink:href="#circlePath" fill="none"/>
+                        <text fill="#fff">
+                            <textPath xlink:href="#circlePath">The Portfolio are loading. Please wait... &lt;Jamemieccs/&gt;</textPath>
+                        </text>
+                    </g>
+                </svg>
+            </div>
+        </div>
         <header id="header">
             <a id="header-logo" href="index.html"><img src="Photo/Logo.png"
                 style="height: 7vh; width: auto; margin-top: 1vh;"></a>
@@ -66,7 +86,7 @@
                 <h3>Other Skills</h3>
                 <div class="skill-set">
                     <i class="fas fa-chart-pie language-logo other"></i>
-                    <h4>Analystical thinking</h4>
+                    <h4>Analytical thinking</h4>
                     <i class="fas fa-photo-video language-logo other"></i>
                     <h4>Media production</h4>
                 </div><br>

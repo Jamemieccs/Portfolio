@@ -1,3 +1,8 @@
+window.addEventListener('load', function(){
+    const loader = document.querySelector('.loading-page');
+    loader.className += " hidden";
+})
+
 var myName = "Kridsada Khongkarat";
 var speed = 100;
 var i = 0;
