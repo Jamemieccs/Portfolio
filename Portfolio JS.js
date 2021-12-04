@@ -9,7 +9,8 @@ headerScrolled = () => {
         headerBar.classList.add('scrolled');
         headerLogo.classList.add('scrolled-img');
 
-        for (let i = 0; i < headerItems.length; i++ ) {
+        let l = headerItems.length;
+        for (let i = 0; i < l; i++ ) {
             const itemsClass = headerItems[i];
             itemsClass.classList.add('items-scrolled');
         }
@@ -23,21 +24,6 @@ headerScrolled = () => {
             itemsClass.classList.remove('items-scrolled');
         }
 
-    }
-}
-
-function testjs() {
-    document.getElementById('text').innerHTML="JS Work!";
-}
-
-var myName = "Kridsada Khongkarat";
-var speed = 100;
-var i = 0;
-function writeName() {
-    if(i < myName.length) {
-        document.getElementById("home-name").innerHTML+=myName.charAt(i);
-        i++;
-        setTimeout(writeName, speed);
     }
 }
 
