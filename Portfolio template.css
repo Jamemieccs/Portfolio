@@ -79,6 +79,7 @@ body {
 
 header {
     font-size: 1.5rem;
+    padding: 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -130,6 +131,12 @@ header nav{
 section {
     padding-top: 9vh;
     height: 100vh;
+}
+
+#header-logo img {
+    height: 5rem; 
+    width: auto; 
+    margin: 3vh auto 1rem auto;
 }
 
 .decoration-btn {
@@ -234,7 +241,7 @@ section {
     color: #4b8bbe;
 }
 
-.skill-describe {
+#skill-describe {
     margin-left: 10px;
     font-size: 1rem;
     color: var(--span-color);
@@ -247,11 +254,15 @@ section {
     border-radius: 1rem;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .skill-exp {
-    text-align: right;
     border-radius: inherit;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
 }
 
 .html {
@@ -467,6 +478,10 @@ section {
     height: 100%;
 }
 
+#contact-object h3 {
+    font-size: 2rem;
+}
+
 #contact-list {
     margin: 2rem auto;
     max-width: 80%;
@@ -495,6 +510,271 @@ section {
     align-items: center;
     height: 10vh;
 }
-.credit-bottom p{
-    font-size: 1.5rem;
+.credit-bottom > p {
+    font-size: 1.25rem;
+}
+
+@media (max-width: 1500px) {
+    .project-tile > h3 {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 1400px) {
+    .box-object > h1 {
+        font-size: 4rem;
+    }
+
+    .decoration-btn {
+        padding: 0.75rem;
+    }
+
+    .skill-set {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 1290px) {
+    .skill-container {
+        font-size: 1rem;
+    }
+
+    .project-tile > h3 , .project-tile h3 span{
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 1209px){
+    .project-tile > h3 , .project-tile h3 span{
+        font-size: 1.25rem;
+    }
+
+    #contact-object h3 {
+        font-size: 1.5rem;
+    }
+
+    .language-logo {
+        font-size: 2.25rem;
+    }
+}
+
+@media (max-width: 1190px) {
+    .project-tile > h3 , .project-tile h3 span{
+        font-size: 1rem;
+    }
+
+    #skill-describe {
+        font-size: 0.5rem;
+    }
+
+    .skill-set {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 990px){
+    .box-object > h1 {
+        font-size: 3rem;
+    }
+    
+    #home-object h3 {
+        font-size: 2rem;
+    }
+
+    .project-tile > h3 , .project-tile h3 span{
+        font-size: 0.9rem;
+    }
+    .credit-bottom > p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 920px) {
+    #welcome-section {
+        background-size: 90%;
+        background-position: 300% 40%;
+    }
+    
+    .skill-container, #skill-describe{
+        display: none;
+    }
+
+    #skills-object {
+        margin: 0 auto;
+        width: 80%;
+        text-align: center;
+    }
+
+    .skills-set-all {
+        display: flex;
+        justify-content: space-around;
+
+    }
+
+    #skills-object label {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 2rem;
+    }
+
+    #skills-object label i {
+        font-size: 5rem;
+    }
+
+    #skills {
+        background-color: var(--second-color);
+        background-image: url(Photo/blackDrip.PNG);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: 0% 0%;
+        height: auto;
+    }
+}
+
+@media (max-width: 880px){
+    .project-tile > h3 , .project-tile h3 span{
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 782px){
+    .project-tile > h3 , .project-tile h3 span{
+        font-size: 1.5rem;
+    }
+
+    .box-object > h1 {
+        font-size: 2.5rem;
+    }
+    
+    #home-object h3 {
+        font-size: 1.5rem;
+    }
+
+    .decoration-btn{
+        font-size: 1.5;
+    }
+    #contact-object h3 {
+        font-size: 1rem;
+    }
+
+    .modal-header > h2 {
+        font-size: 2rem;
+    }
+    
+    .modal-body > p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 620px){
+    .project-tile > h3 , .project-tile h3 span{
+        font-size: 1.5rem;
+    }
+
+    .box-object > h1 {
+        font-size: 2rem;
+    }
+
+    .decoration-btn{
+        font-size: 1;
+        padding: 0.5rem;
+    }
+    #contact-object h3 {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 580px){
+    .skill-set, .skill-set i{
+        font-size: 2rem;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 500px){
+    .box-object > h1 {
+        font-size: 2.5rem;
+    }
+    
+    #home-object h3 {
+        font-size: 1.5rem;
+    }
+
+    #welcome-section {
+        background-size: 180%;
+        background-position: 50% 50%;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+    }
+
+    #home-object {
+        margin: auto auto;
+        width: 90%;
+        height: 80%;
+        position: relative;
+        text-align: center;
+    }
+
+    #home-object button {
+        bottom: 0;
+        position: absolute;
+    }
+
+    .modal-header > h2 {
+        font-size: 1.75rem;
+    }
+    
+    .modal-body > p {
+        font-size: 0.8rem;
+    }
+
+    .credit-bottom > p {
+        font-size: 0.8rem;
+    }
+
+    .project-tile > h3 , .project-tile h3 span{
+        font-size: 1rem;
+    }
+
+    #header-logo img {
+        height: 3rem;
+        width: auto;
+    }
+
+    header {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 350px){
+    .box-object > h1 {
+        font-size: 2rem;
+    }
+    
+    #home-object h3 {
+        font-size: 1rem;
+    }
+    #home-object {
+        height: 70%;
+    }
+
+    #home-object button, #home-object button span {
+        font-size: 1rem;
+    }
+
+    .skill-set, .skill-set i{
+        font-size: 1rem;
+    }
+
+    #skills-object label {
+        font-size: 1rem;
+    }
+    #skills-object label i{
+        font-size: 4rem;
+    }
+    #contact-list a i {
+        font-size: 2rem;
+    }
 }
