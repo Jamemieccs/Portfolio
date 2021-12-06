@@ -3,35 +3,72 @@
     <head>
         <link rel="stylesheet" href="Portfolio template.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Jost:wght@100;400">
-        <script src="Portfolio JS.js"></script>
     </head>
     <body onload="writeName()">
+        <div id="loading-page" class="loading-page">
+            <div class="loading-circle">
+                <svg viewbox="0 0 500 500">
+                    <defs>
+                        <path id="circlePath" 
+                        d=" 
+                        m 0, 0 
+                        m -50, 0 
+                        a 50, 50 0 1, 1 100,0 
+                        a 50, 50 0 1, 1 -100,0 "/>
+                    </defs>
+                    <g>
+                        <use xlink:href="#circlePath" fill="none"/>
+                        <text fill="#fff">
+                            <textPath xlink:href="#circlePath">The Portfolio are loading. Please wait... &lt;Jamemieccs/&gt;</textPath>
+                        </text>
+                    </g>
+                </svg>
+            </div>
+        </div>
         <header id="header">
-            <a id="header-logo" href="index.html"><img src="Photo/Logo.png"
-                style="height: 7vh; width: auto; margin-top: 1vh;"></a>
+            <a id="header-logo" href="index.html"><img src="Photo/Logo.png"></a>
             <nav id="navbar">
-                <a href="#welcome-section">Home</a>
-                <a href="#about-me">About Me</a>
-                <a href="#project">Project</a>
-                <a href="#contact">Contact</a>
+                <a href="index.html#welcome-section">Home</a>
+                <a href="index.html#skills">Skills</a>
+                <a href="index.html#project">Project</a>
+                <a href="index.html#contact">Contact</a>
             </nav>
         </header>
-        <section id="welcome-section">
-            <div id="home-object" class="box-object">
-                <h3>This is about me page!</h3>
-                <h1 id="home-name"></h1>
-                <button type="button" onclick="location.href='#about-me'" class="decoration-btn"><span class="btn-dec">&lt;</span>
-                 About Me <span class="btn-dec">/&gt;</span></button>
+        <section id="about-me-section">
+            <div id="about-me-object" class="box-object">
+                <h5>Who I am</h5>
+                <h1>This is me Jame!</h1>
+                <hr>
+                <img src="Photo/JameAboutMe.JPG" alt="My photo about me" id="about-me-img">
+                <p>I'm a self-taught developer. I have a passion in coding, drawing, 
+                    designing a media and creating a ton of my ideas in my head come true.<br><br>
+
+                    A creative person, who graduate in chemical engineering but love coding and 
+                    watching japan anime. After wachted <i>'The Penthouse'</i> k-drama I have 
+                    addicted to listening opera song and my favorited opera singer is Sumi Jo.<br><br>
+                    
+                    Actually I'm good at logical thinking and I start learnig python first for 
+                    back end developer, but I think I should have a basic knowledge of front end area. 
+                    So I start learning HTML CSS JavaScript and I always looking for an opportunities 
+                    to work in front end developer career for more understading in front end area. 
+                    Hope you guy will make it happens!</p>
             </div>
         </section>
-        <section id="about-me">
-            <div id="about-object" class="box-object">
-                <h1>About Me</h1>
+        <section id="profile-section">
+            <div id="profile-object" class="box-object">
+                <h3>Education</h3>
+                <p>Bachelor's degree<br>
+                    Srinakharinwirot University<br>
+                    I graduated in <strong>Chemical Engineering</strong>  with GPAX 3.61.
+                </p>
+                <p>Base on <strong>Bangkok, Thailand.</strong></p>
+                <a id="transcript" href="https://drive.google.com/uc?export=download&id=1riyZFGiFE_dbrecOD0IYFSPp70fY7uNZ" 
+                target="_blank">Download CV</a>
+            </div>
+            <div id="credit-btm">
+                <p>Created and designed by Kridsada Khongkarat &copy; All rights reserved</p>
             </div>
         </section>
-        <section id="project">
-        </section>
-        <section id="contact">
-        </section>
+        <script src="Portfolio JS.js"></script>
     </body>
 </html>

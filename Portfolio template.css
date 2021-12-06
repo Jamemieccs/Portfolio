@@ -522,6 +522,103 @@ section {
     font-size: 1.25rem;
 }
 
+
+#about-me-section{
+    background-image: url(Photo/JameAboutMe.JPG);
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: 100% 50%;
+    height: auto;
+}
+
+#about-me-object{
+    color: var(--text-bright-color);
+    width: 800px;
+    max-width: 50%;
+    margin-left: 10vh;
+}
+
+#about-me-object h5 {
+    font-size: 2.5rem;
+    color: var(--hover-color);
+}
+
+#about-me-object h1 {
+    font-size: 4rem;
+    text-align: center;
+}
+
+#about-me-object p {
+    font-size: 1.5rem;
+}
+
+#about-me-img{
+    display: none;
+    width: 50%;
+    height: auto;
+    margin: 5rem auto;
+}
+
+#profile-section {
+    background-color: var(--second-color);
+    background-image: url(Photo/JamesAnime.PNG), url(Photo/aboutMeBlack.PNG);
+    background-repeat: no-repeat;
+    background-size: 30%, 100%;
+    background-position: 0% 0%, 0% 0%;
+    height: 100vh;
+    position: relative;
+}
+
+#profile-object {
+    width: 60%;
+    height: auto;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    padding-top: 5vh;
+}
+
+#profile-object h3{
+    font-size: 4rem;
+}
+
+#profile-object p{
+    font-size: 2rem;
+    text-align: left;
+    padding-left: 5rem;
+    margin-bottom: 3rem;
+}
+
+#transcript{
+    text-decoration: none;
+    color: var(--text-dark-color);
+    padding: 1rem 2rem;
+    border: 0.2rem solid var(--btn-color);
+    border-radius: 2rem;
+    transition: 300ms ease;
+}
+
+#transcript:hover{
+    background: linear-gradient( 35deg, 
+    rgba(245, 22, 99, 0.5),
+    rgba(250, 194, 24, 0.5));
+    color: var(--text-bright-color);
+    border-color: rgba(245, 22, 99, 0.5);
+}
+
+
+#credit-btm{
+    color: var(--text-bright-color);
+    background-color: var(--main-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 5rem;
+    bottom: 0;
+    position: absolute;
+}
+
 @media screen and (min-width: 1200px) {
     #welcome-section {
         background-size: 60%;
@@ -580,6 +677,33 @@ section {
 
     #contact-object h3 {
         font-size: 1.5rem;
+    }
+
+    #about-me-object{
+        max-width: 80%;
+        position: relative;
+        height: 120vh;
+        margin: 5vh auto;
+    }
+    #about-me-section{
+        background-image: none;
+        padding: 0;
+    }
+    
+    #about-me-object h1 {
+        font-size: 3rem;
+    }
+    
+    #about-me-object p {
+        font-size: 1rem;
+    }
+
+    #about-me-img{
+        display: block;
+    }
+
+    #profile-object{
+        width: 90%;
     }
 }
 
