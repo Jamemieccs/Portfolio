@@ -552,6 +552,10 @@ section {
         font-size: 2rem;
     }
 
+    #skills-object{
+        text-align: center;
+    }
+
     .skills-set-all {
         display: flex;
         justify-content: space-around;
@@ -619,7 +623,6 @@ section {
     }
 
     #skills-object{
-        text-align: center;
         margin: 0 auto;
         width: 80%;
         padding-top: 3vh;
