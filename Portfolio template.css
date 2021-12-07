@@ -178,7 +178,7 @@ section {
 }
 
 #welcome-section {
-    background-image: url(Photo/Jame.JPG);
+    background-image: url(Photo/Jame.webp);
     background-repeat: no-repeat;
     background-size: 80%;
     background-position: 200% 50%;
@@ -201,7 +201,7 @@ section {
 
 #skills {
     background-color: var(--second-color);
-    background-image: url(Photo/blackDrip.PNG), url(Photo/JameGrad.JPG);
+    background-image: url(Photo/blackDrip.webp), url(Photo/JameGrad.webp);
     background-repeat: no-repeat;
     background-size: 100%, 40%;
     background-position: 0% 0%, 2% 70%;
@@ -299,7 +299,7 @@ section {
 
 #project {
     background-color: var(--third-color);
-    background-image: url(Photo/backgroundPaper2.PNG);
+    background-image: url(Photo/backgroundPaper2.webp);
     background-size: 100%;
     background-position: 0% 0%;
     background-repeat: no-repeat;
@@ -472,7 +472,7 @@ section {
 #contact {
     background-color: var(--favorite-color);
     color: var(--text-bright-color);
-    background-image: url(Photo/JameAnime.PNG), url(Photo/Contact.PNG);
+    background-image: url(Photo/JameAnime.webp), url(Photo/Contact.webp);
     background-repeat: no-repeat;
     background-size: 25%, 100%;
     background-position: 95% 0%, 0% 0%;
@@ -524,7 +524,7 @@ section {
 
 
 #about-me-section{
-    background-image: url(Photo/JameAboutMe.JPG);
+    background-image: url(Photo/JameAboutMe.webp);
     background-repeat: no-repeat;
     background-size: 40%;
     background-position: 100% 50%;
@@ -561,11 +561,12 @@ section {
 
 #profile-section {
     background-color: var(--second-color);
-    background-image: url(Photo/JamesAnime.PNG), url(Photo/aboutMeBlack.PNG);
+    background-image: url(Photo/JamesAnime.webp), url(Photo/aboutMeBlack.webp);
     background-repeat: no-repeat;
     background-size: 30%, 100%;
     background-position: 0% 0%, 0% 0%;
-    height: 100vh;
+    height: 100%;
+    min-height: 80vh;
     position: relative;
 }
 
@@ -575,7 +576,7 @@ section {
     position: absolute;
     right: 0;
     text-align: center;
-    padding-top: 5vh;
+    padding: 5vh 0;
 }
 
 #profile-object h3{
@@ -614,7 +615,7 @@ section {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 5rem;
+    max-height: 5rem;
     bottom: 0;
     position: absolute;
 }
@@ -682,7 +683,6 @@ section {
     #about-me-object{
         max-width: 80%;
         position: relative;
-        height: 120vh;
         margin: 5vh auto;
     }
     #about-me-section{
@@ -740,7 +740,7 @@ section {
     }
 
     #skills {
-        background-image: url(Photo/blackDrip.PNG);
+        background-image: url(Photo/blackDrip.webp);
         background-repeat: no-repeat;
         background-size: 100%;
         background-position: 0% 0%;
@@ -758,5 +758,42 @@ section {
 
     #contact-object h1 {
         font-size: 4rem;
+    }
+
+    #about-me-object h1 {
+        font-size: 2rem;
+    }
+    
+    #about-me-object h5 {
+        font-size: 1.5rem;
+    }
+    
+    #about-me-object p {
+        font-size: 0.75rem;
+    }
+
+    #about-me-img{
+        margin: 1rem auto;
+        width: 80%;
+    }
+
+    #profile-object{
+        width: 90%;
+    }
+
+    #profile-object h3{
+        font-size: 2rem;
+    }
+
+    #profile-object p, #profile-object a{
+        font-size: 1.2rem;
+    }
+    
+    #credit-btm p{
+        font-size: 0.5rem;
+    }
+
+    #credit-btm{
+        height: 1rem;
     }
 }
